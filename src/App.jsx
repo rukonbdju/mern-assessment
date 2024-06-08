@@ -1,15 +1,16 @@
 
+import ReducerProvider from '../context/ReducerProvider'
 import './App.css'
+import Reservation from './components/Reservation/Reservation'
+
 
 function App() {
-
   return (
-    <>
-      <h1 className='text-3xl font-bold'>Vite + React</h1>
-      <p className="">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <ReducerProvider>
+        <Reservation></Reservation>
+      </ReducerProvider>
+    </div>
   )
 }
 
